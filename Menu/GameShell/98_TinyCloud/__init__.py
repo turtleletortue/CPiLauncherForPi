@@ -123,13 +123,13 @@ class TinyCloudPage(Page):
                     
         labels = \
         [["forssh","For ssh and scp:",self._ListFontObj,self._TextColor],
-         ["ssh_addr","ssh cpi@%s" % self._IP, self._ListFontObj,self._URLColor],
+         ["ssh_addr","ssh pi@%s" % self._IP, self._ListFontObj,self._URLColor],
          ["forwin", "For Windows network:",    self._ListFontObj, self._TextColor],
          ["samba_games", "\\\\%s\games" % self._IP, self._ListFontObj,self._URLColor],
          ["samba_music", "\\\\%s\music" % self._IP, self._ListFontObj,self._URLColor],
          ["forID",      "ID:",                     self._ListFontObj, self._TextColor],
          ["forKey",     "Key:",                    self._ListFontObj, self._TextColor],
-         ["key_and_pass", "cpi",                   self._ListFontObj, self._URLColor],
+         ["key_and_pass", "pi",                   self._ListFontObj, self._URLColor],
          ["for_airplay", "Airplay:",               self._ListFontObj, self._TextColor],
          ["airplay_name",hostname,            self._ListFontObj, self._URLColor],
          ["for-usb-eth","USB-Ethernet:",            self._ListFontObj, self._TextColor],

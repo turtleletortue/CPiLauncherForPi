@@ -28,7 +28,7 @@ from libs.DBUS       import is_wifi_connected_now
 
 import config
 
-LauncherLoc = "/home/cpi/launcher"
+LauncherLoc = "/home/pi/apps/launcher"
 
 class UpdateDownloadPage(DownloadProcessPage):
     _MD5 = ""
@@ -42,8 +42,8 @@ class UpdateDownloadPage(DownloadProcessPage):
                     filename = self._Downloader.get_dest()
                     
                     if filename.endswith(".tar.gz"):                    
-                        #/home/cpi/apps/[launcher]
-                        cmdpath = "tar zxf " + CmdClean(filename) + " -C /home/cpi/ ;rm -rf "+ filename
+                        #/home/pi/apps/[launcher]
+                        cmdpath = "tar zxf " + CmdClean(filename) + " -C /home/pi/ ;rm -rf "+ filename
                         pygame.event.post( pygame.event.Event(RUNEVT, message=cmdpath))
                         
                     self.ReturnToUpLevelPage()

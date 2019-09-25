@@ -216,23 +216,23 @@ class AboutPage(Page):
         launcher_version["value"] = VERSION
         self._AList["launcher_ver"] = launcher_version
     
-    def OsImageVersion(self):
-        if FileExists("/etc/clockworkpi_os_image_version"):
+    def OsVersion(self):
+        if FileExists("/etc/os-release"):
             try:
-                with open("/etc/clockworkpi_os_image_version") as f:
+                with open("/etc/os-release") as f:
                     content = f.readlines()
                 content = [x.strip() for x in content]
             
             except:
-                print("open %s failed" % "/etc/clockworkpi_os_image_version")
+                print("open %s failed" % "/etc/os-release")
                 content = None
             
             if content != None and len(content) > 0:
-                os_image_ver = {}
-                os_image_ver["key"] = "os_image_ver"
-                os_image_ver["label"] = "OS Image:"
-                os_image_ver["value"] = content[0][:12]
-                self._AList["os_image_ver"] = os_image_ver
+                os_ver = {}
+                os_ver["key"] = "os_ver"
+                os_ver["label"] = "OS Version:"
+                os_ver["value"] = content[0][12:]
+                self._AList["os_ver"] = os_ver
     
     def GenList(self):
         
@@ -242,7 +242,7 @@ class AboutPage(Page):
         start_y  = 10
         last_height = 0
 
-        for i,u in enumerate( ["processor","armcores","cpuscalemhz","features","memory","uname","launcher_ver","os_image_ver"] ):
+        for i,u in enumerate( ["processor","armcores","cpuscalemhz","features","memory","uname","launcher_ver","os_ver"] ):
         #for i,u in enumerate( ["processor","cpucores","cpumhz","flags","memory","uname"] ):
             if u not in self._AList:
                 continue
@@ -294,7 +294,7 @@ class AboutPage(Page):
         self.Uname()
         
         self.LauncherVersion()
-        self.OsImageVersion()
+        self.OsVersion()
         
         self.GenList()
 

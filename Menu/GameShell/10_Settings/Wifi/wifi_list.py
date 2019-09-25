@@ -6,6 +6,7 @@ from beeprint import pp
 from libs.roundrects import aa_round_rect
 import gobject
 from wicd import misc 
+import wifi
 ## local UI import
 from UI.constants import Width,Height
 from UI.page   import Page,PageSelector

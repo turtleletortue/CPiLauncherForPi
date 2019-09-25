@@ -56,7 +56,7 @@ class MyEmulator(object):
     _Emulator = None
     
     _FavGID = 31415
-    _FavGname = "cpifav"
+    _FavGname = "pifav"
     
     def __init__(self):
         self._Icons = {}

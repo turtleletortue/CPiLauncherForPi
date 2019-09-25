@@ -3,19 +3,18 @@ This is the launcher for GameShell based on 320x240 resolution and D-Pad layout.
 ![Screenshot](https://github.com/clockworkpi/GameShellDocs/blob/master/screenshot.png)
 
 # Create the necessary user and group
-* User name: cpi
-* Password: cpi
-* Group ID: 31415 with group name: cpifav
+* User name: pi
+* Password: pi
+* Group ID: 31415 with group name: pifav
 
 ```
-sudo adduser cpi  
-sudo groupadd cpifav -g 31415  
-sudo adduser cpi cpifav  
+sudo groupadd pifav -g 31415  
+sudo adduser pi pifav  
 ```
 
 # Directory structure
 ```
-/home/cpi/
+/home/pi/
 ├── apps
 │   ├── emulators
 │   └── launcher <-Here we are
@@ -30,9 +29,9 @@ sudo adduser cpi cpifav
 ```
 ## Create the necessary directories
 ```
-mkdir -p /home/cpi/apps/emulators  
-mkdir -p /home/cpi/games  
-mkdir -p /home/cpi/music  
+mkdir -p /home/pi/apps/emulators  
+mkdir -p /home/pi/games  
+mkdir -p /home/pi/music  
 ```
 
 # Dependent packages
@@ -54,14 +53,14 @@ sudo pip install validators numpy requests python-mpd2
 vim ~/.mpd_cpi.conf
 
 ```
-music_directory    "/home/cpi/music"
-playlist_directory    "/home/cpi/music/playlists"
-db_file    "/home/cpi/music/tag_cache"
+music_directory    "/home/pi/music"
+playlist_directory    "/home/pi/music/playlists"
+db_file    "/home/pi/music/tag_cache"
 log_file    "/tmp/mpd.log"
 pid_file    "/tmp/mpd.pid"
-state_file    "/home/cpi/music/mpd_state"
-sticker_file    "/home/cpi/music/sticker.sql"
-user    "cpi"
+state_file    "/home/pi/music/mpd_state"
+sticker_file    "/home/pi/music/sticker.sql"
+user    "pi"
 bind_to_address    "/tmp/mpd.socket"
 auto_update    "yes"
 auto_update_depth    "3" 

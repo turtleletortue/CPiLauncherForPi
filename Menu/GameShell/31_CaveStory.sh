@@ -1,1 +1,1 @@
-retroarch -L /home/cpi/apps/emulators/nxengine_libretro.so /home/cpi/games/nxengine/cavestory/data
+retroarch -L /home/pi/apps/emulators/nxengine_libretro.so /home/pi/games/nxengine/cavestory/data

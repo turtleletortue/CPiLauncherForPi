@@ -55,6 +55,9 @@ if not pygame.display.get_init():
 if not pygame.font.get_init():
     pygame.font.init()
 
+# Removes Mouse Cursor
+pygame.mouse.set_visible(False)
+
 gobject_main_loop = None
 
 sound_patch = None
@@ -557,7 +560,7 @@ def big_loop():
     main_screen.Init()
     
     main_screen.ReadTheDirIntoPages("../Menu",0,None)
-    main_screen.ReadTheDirIntoPages("/home/cpi/apps/Menu",1,main_screen._Pages[ len(main_screen._Pages) -1])
+    main_screen.ReadTheDirIntoPages("/home/pi/apps/Menu",1,main_screen._Pages[ len(main_screen._Pages) -1])
     main_screen.ReunionPagesIcons()
     
     main_screen.FartherPages()

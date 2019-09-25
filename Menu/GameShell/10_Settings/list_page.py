@@ -67,8 +67,6 @@ class ListPage(Page):
                          ["","PowerOFF","Power OFF"],
                          ["","ButtonsLayout","Buttons Layout"],
                          ["","Skins","Theme Manager"],
-                         ["","LauncherGo","Switch to LauncherGo"],
-                         ["","Lima","GPU Driver Switch"],
                          ["","GateWay","Network gateway switch"]]
 
         start_x  = 0

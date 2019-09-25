@@ -20,8 +20,8 @@ codo_init
     15 music_volume 256 // 0..256
     16 mix_buffer_size 1024 // usually 1024. Try 2048 if you get choppy sound
     17 version 0.1.11g
-    18 root_path /home/cpi/.lexaloffle/pico-8/carts/
-    19 cdata_path /home/cpi/.lexaloffle/pico-8/cdata/
+    18 root_path /home/pi/.lexaloffle/pico-8/carts/
+    19 cdata_path /home/pi/.lexaloffle/pico-8/cdata/
     20 joystick_index 0
     21 button_keys 0 0 0 0 0 0 0 0 0 0 0 0 0 
     22 live_notes 0
@@ -57,12 +57,12 @@ codo_init
   codo_video_init
   codo_mouse_init
   codo_joystick_init
-  Reading controller mappings: /home/cpi/.lexaloffle/pico-8/sdl_controllers.txt
+  Reading controller mappings: /home/pi/.lexaloffle/pico-8/sdl_controllers.txt
   searching for joysticks
     found 0 joysticks
   ok
 ok
-codo_load_pod: /home/cpi/apps/Menu/50_PICO-8/pico8.dat ok 
+codo_load_pod: /home/pi/apps/Menu/50_PICO-8/pico8.dat ok 
 codo_set_screen 128 128 8 100
  set pixel_perfect 1
  window size: 640 480

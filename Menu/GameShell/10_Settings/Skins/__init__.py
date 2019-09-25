@@ -101,7 +101,7 @@ class SkinsPage(Page):
 
 
         skins = [["../skin/default","Default"]]
-        files_path = glob.glob("/home/cpi/skins/*")
+        files_path = glob.glob("/home/pi/skins/*")
         
         for i ,v in enumerate(files_path):
             if os.path.isdir(v):

@@ -43,7 +43,7 @@ do
 end
 -- }}}
 
-theme_base = "/home/cpi/launcher/awesome"
+theme_base = "/home/pi/launcher/awesome"
 -- Themes define colours, icons, font and wallpapers.
 beautiful.init(theme_base .. "/themes/default/theme.lua")
 

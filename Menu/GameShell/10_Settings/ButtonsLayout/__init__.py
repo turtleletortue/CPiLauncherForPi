@@ -20,7 +20,7 @@ from UI.confirm_page import ConfirmPage
 
 class UpdateConfirmPage(ConfirmPage):
     _ConfirmText = "Apply to RetroArch?"
-    _RetroArchConf = "/home/cpi/.config/retroarch/retroarch.cfg"
+    _RetroArchConf = "/home/pi/.config/retroarch/retroarch.cfg"
     _LayoutMode = "Unknown"
 
     def ModifyRetroArchConf(self,keys):

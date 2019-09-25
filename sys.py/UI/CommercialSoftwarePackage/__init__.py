@@ -1,16 +1,16 @@
 # -*- coding: utf-8 -*- 
 
 """
-Package  /home/cpi/games/xxx/yyy.zip ,only support in zip 
+Package  /home/pi/games/xxx/yyy.zip ,only support in zip 
 
-com_pkg_info /home/cpi/launcher/Menu/GameShell/xxxx/compkginfo.json
+com_pkg_info /home/pi/launcher/Menu/GameShell/xxxx/compkginfo.json
 use https://jsonlint.com/ to validate first in case syntax err
 
 ```
 {
 "NotFoundMsg":["Please Go to \n|None|varela14|True",
 "https://www.lexaloffle.com/pico-8.php|URL|None|True|True",
-"buy a pico-8 raspi and put zip into \n/home/cpi/games/PICO-8"]
+"buy a pico-8 raspi and put zip into \n/home/pi/games/PICO-8"]
 
 "MD5":{"pico-8_0.1.11g_raspi.zip":"a3f2995cf117499f880bd964d6a0e1f2","pico-8_0.1.11g_amd64.zip":"6726141c784afd4a41be6b7414c1b932"}
 }
